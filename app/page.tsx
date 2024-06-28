@@ -1,9 +1,9 @@
-import { Header } from './components/Header/Header';
+'use client';
 
-export default function Home() {
-  return (
-    <main style={{ position: 'relative' }}>
-      <Header />
-    </main>
-  );
-}
+import React from 'react';
+
+const Home: React.FC = () => {
+  return <main></main>;
+};
+
+export default Home;
