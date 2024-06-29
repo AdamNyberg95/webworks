@@ -1,15 +1,34 @@
 import styled from 'styled-components';
 import Link from 'next/link'
 
+interface ScrollProps{
+  isScrolled: boolean;
+}
+
 export const Container = styled.header`
   position: fixed;
   gap: 16px;
   width: 100%;
-  height: 73px;
+  align-items: center;
+  transition: all 0.3s ease;
+
   display: flex;
 flex-direction: row;
 justify-content: center;
 top: 0;
+
+`;
+
+export const Wrapper = styled.div<ScrollProps>`
+  width: ${({ isScrolled }) => (isScrolled ? '95%' : '100%')};
+  margin-top: ${({ isScrolled }) => (isScrolled ? '10px' : '')};
+  padding:${({ isScrolled }) => (isScrolled ? '0px' : '10px')};
+  box-shadow: ${({ isScrolled }) => (isScrolled ? '1.5px 1.5px 3px 3px rgba(0, 0, 0, 0.1)' : 'none')};
+ border-radius: ${({ isScrolled }) => (isScrolled ? '15px' : '0')};;
+ height: 82px;
+ display: flex;
+ justify-content: centre;
+
 `;
 
 export const StyledNavList = styled.ul`
@@ -19,6 +38,7 @@ justify-content: space-between;
 width: 90vw;
 align-items: center;
 max-width: 1400px;
+
 
 `;
 
@@ -31,13 +51,14 @@ flex-direction: row;
 export const Logga = styled.div`
 display: flex;
 align-items: center;
-padding:  5px;
+
 `;
 
 export const StyledNavLinkItem = styled.nav`
 display: flex;
 align-items: center;
-padding: 5px 5px;
+padding: 10px;
+
 
 `;
 

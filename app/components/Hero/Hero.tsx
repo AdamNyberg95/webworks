@@ -7,10 +7,10 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 
 export const Hero: React.FC = () => {
-    return(<Container>
+    return(<Container style={{ backgroundColor: 'var(--header-color)' }}>
         <TextBox>
            <H1>Your solution for  <BoldSpan>your </BoldSpan> web</H1> 
-             <TypographyBig> SA solutions erbjuder skärddarsydda digitala lösningar för din web. Har du inte en hemsida till ditt företag, behöver din hemsida uppdateras eller har du behov av att hitta andra digitala lösningar för ditt företag? Då är SA solutions rätt partner för dig. </TypographyBig>
+             <TypographyBig> SA solutions erbjuder skärddarsydda digitala lösningar för din web. Ser du behov av en hemsida till ditt företag, behöver din hemsida uppdateras eller har du behov av att hitta andra digitala lösningar för ditt företag? Då är SA solutions rätt partner för dig. </TypographyBig>
              <BtnText> <TypographySmall> Läs mer om oss </TypographySmall><IoIosArrowRoundForward size={25} /></BtnText> 
              
              <BtnWrapper>
