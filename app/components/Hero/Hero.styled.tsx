@@ -7,15 +7,18 @@ width: 100vw;
 padding: 20px;
 
 
+
+
 `;
+
+
 
 export const TextBox = styled.div`
 display:flex;
 flex-direction: column;
 justify-content: center;
-margin-left: 10px;
+padding: 20px;
 height: 100%;
-width: 55%;
 max-width: 700px;
 
 `;
