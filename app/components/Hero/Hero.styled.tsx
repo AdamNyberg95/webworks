@@ -19,11 +19,19 @@ height: 100%;
 width: 55%;
 `;
 
+
 export const H1 = styled.h1`
 font-size: 54px;
 font-weight: 300;
 line-height: 1px;
 
+
+`;
+
+
+
+export const BoldSpan = styled.span`
+font-weight: 700;
 `;
 
 export const TypographyBig = styled.h4`

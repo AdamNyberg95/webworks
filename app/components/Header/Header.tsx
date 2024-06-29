@@ -8,7 +8,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 
 export const Header: React.FC = () => {
-const links = ["Våra tjänster", "Om oss", "kontakt"];
+const links = ["Våra tjänster", "Om oss", "Kontakt"];
 
   return (
     <Container style={{ backgroundColor: 'var(--header-color)' }}>
