@@ -18,13 +18,21 @@ flex-direction: column;
 justify-content: center;
 padding: 20px;
 height: 100%;
-max-width: 700px;
+max-width: 720px;
 
 `;
 
 
 export const H1 = styled.h1`
-font-size: 54px;
+font-size: 58px;
+font-weight: 300;
+line-height: 0px;
+color: #619894;
+
+
+`;
+export const H2 = styled.h2`
+font-size: 40px;
 font-weight: 300;
 line-height: 1px;
 
@@ -35,6 +43,7 @@ line-height: 1px;
 
 export const BoldSpan = styled.span`
 font-weight: 700;
+color: #619894;
 `;
 
 export const TypographyBig = styled.h4`
