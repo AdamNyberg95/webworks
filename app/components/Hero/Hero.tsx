@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { BoldSpan, BtnPrimaryBig, BtnText, BtnWrapper, Container, H1, TextBox, TypographyBig, TypographySmall, Wrapper } from './Hero.styled';
+import { BoldSpan, BtnPrimaryBig, BtnText, BtnWrapper, Container, H1, TextBox, TypographyBig, TypographySmall} from './Hero.styled';
 import { BtnPrimary } from '../Header/Header.styled';
 import { IoIosArrowRoundForward } from "react-icons/io";
 
