@@ -1,7 +1,7 @@
 :root {
   --background-color: #fff;
   --text-color: #000;
-  --header-color: green;
+  --header-color: #E6E6E6;
 }
 
 [data-theme='dark'] {
