@@ -4,6 +4,7 @@ import { Header } from './components/Header/Header';
 import ThemeToggle from './components/ThemeToggle/ThemeToggle';
 import { ThemeProvider } from './context/ThemeContext';
 import './globals.css';
+import { Hero } from './components/Hero/Hero';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider>
           <Header />
+          <Hero/>
           <ThemeToggle />
           <div
             style={{

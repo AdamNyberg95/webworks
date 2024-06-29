@@ -9,6 +9,7 @@ export const Container = styled.header`
   display: flex;
 flex-direction: row;
 justify-content: center;
+top: 0;
 `;
 
 export const StyledNavList = styled.ul`
@@ -18,6 +19,7 @@ justify-content: space-between;
 width: 90vw;
 align-items: center;
 max-width: 1400px;
+
 `;
 
 export const LoggoNavWrapper = styled.div`
@@ -43,8 +45,8 @@ export const BtnWrapper = styled.div`
 
 `;
 
-export const BtnBooking = styled.button`
-width: 100px;
+export const BtnPrimary = styled.button`
+width: 110px;
 height: 40px;
 border-radius: 20px;
 padding: 5px 5px;

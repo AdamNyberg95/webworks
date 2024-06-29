@@ -1,10 +1,11 @@
 'use client';
 
 import React from 'react';
-import { BtnBooking, BtnTypography, Container, Logga, LoggoNavWrapper, StyledNavLinkItem, StyledNavList} from './Header.styled';
+import {  BtnPrimary, BtnTypography, Container, Logga, LoggoNavWrapper, StyledNavLinkItem, StyledNavList} from './Header.styled';
 import logga from '../../assets/icons/logga.ico'
 import Image from 'next/image';
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowRoundForward } from "react-icons/io";
+
 
 export const Header: React.FC = () => {
 const links = ["Våra tjänster", "Om oss", "kontakt"];
@@ -18,7 +19,8 @@ const links = ["Våra tjänster", "Om oss", "kontakt"];
           <StyledNavLinkItem key={index}>{link}</StyledNavLinkItem>
         ))}
       </LoggoNavWrapper>
-      <BtnBooking><BtnTypography>Boka möte </BtnTypography> <IoIosArrowForward /></BtnBooking>
+      <BtnPrimary><BtnTypography>Boka möte </BtnTypography> <IoIosArrowRoundForward size={23}/>
+      </BtnPrimary>
       </StyledNavList>
     </Container>
   );
