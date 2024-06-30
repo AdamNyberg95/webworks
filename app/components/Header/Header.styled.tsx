@@ -67,8 +67,20 @@ export const BtnWrapper = styled.div`
 `;
 
 export const BtnPrimary = styled.button`
-width: 110px;
-height: 40px;
+width: 135px;
+height: 45px;
+border-radius: 30px;
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border: solid 1px;
+
+`;
+export const BtnPrimarySmall = styled.button`
+width: 112px;
+height: 38px;
 border-radius: 20px;
 padding: 5px 5px;
 display: flex;
@@ -76,7 +88,7 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 border: solid 1px;
-padding: 2px;
+
 `;
 
 export const BtnTypography = styled.p`

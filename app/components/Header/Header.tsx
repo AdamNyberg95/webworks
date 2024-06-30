@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import {  BtnPrimary, BtnTypography, Container, Logga, LoggoNavWrapper, StyledNavLinkItem, StyledNavList, Wrapper} from './Header.styled';
-import logga from '../../assets/icons/logga.ico'
+import {  BtnPrimarySmall, BtnTypography, Container, Logga, LoggoNavWrapper, StyledNavLinkItem, StyledNavList, Wrapper} from './Header.styled';
+import logga2 from '../../assets/icons/logga1.png'
+
+
 import Image from 'next/image';
 import { IoIosArrowRoundForward } from "react-icons/io";
 
@@ -26,13 +28,13 @@ useEffect(() => {
       <Wrapper isScrolled={isScrolled}>
       <StyledNavList>
         <LoggoNavWrapper>
-      <Logga><Image src={logga} alt="logga"  width={80} height={80}/> </Logga>
+      <Logga><Image src={logga2} alt="logga"  width={65} height={65}/> </Logga>
         {links.map((link, index) => (
           <StyledNavLinkItem key={index}>{link}</StyledNavLinkItem>
         ))}
       </LoggoNavWrapper>
-      <BtnPrimary><BtnTypography>Boka möte </BtnTypography> <IoIosArrowRoundForward size={23}/>
-      </BtnPrimary>
+      <BtnPrimarySmall><BtnTypography>Boka möte </BtnTypography> <IoIosArrowRoundForward size={23}/>
+      </BtnPrimarySmall>
       </StyledNavList>
       </Wrapper>
     </Container>

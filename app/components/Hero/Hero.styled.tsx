@@ -4,10 +4,6 @@ export const Container = styled.header`
 height: 100vh;
 width: 100vw;
 padding: 20px;
-
-
-
-
 `;
 
 
@@ -18,25 +14,22 @@ flex-direction: column;
 justify-content: center;
 padding: 20px;
 height: 100%;
-max-width: 720px;
-
+max-width: 850px;
 `;
 
 
 export const H1 = styled.h1`
-font-size: 58px;
+font-size: 72px;
 font-weight: 300;
 line-height: 0px;
 color: #619894;
-
-
 `;
+
 export const H2 = styled.h2`
-font-size: 40px;
+font-size: 45px;
 font-weight: 300;
 line-height: 1px;
-
-
+margin-top: 28px;
 `;
 
 
@@ -47,10 +40,12 @@ color: #619894;
 `;
 
 export const TypographyBig = styled.h4`
-font-size: 20px;
-font-weight: 300;
+font-size: 22px;
+font-weight: 200;
 line-height: 1.5;
 margin-left: 10px;
+
+
 
 
 
@@ -79,22 +74,24 @@ margin-left: 10px;
 `;
 
 export const TypographySmall = styled.p`
-font-size: 16px;
+font-size: 18px;
 
 
 `;
 
+export const BtnTypography = styled.p`
+font-size: 16px;
+`;
+
 export const BtnPrimaryBig = styled.button`
-width: 165px;
-height: 40px;
-border-radius: 20px;
-padding: 5px 5px;
+width: 195px;
+height: 45px;
+border-radius: 30px;
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
 border: solid 1px;
-padding: 4px 4px;
 margin-right: 10px;
 `;
 
