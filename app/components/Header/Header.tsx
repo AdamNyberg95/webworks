@@ -22,7 +22,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <Container style={{ backgroundColor: 'var(--header-color)' }} >
+    <Container>
       <Wrapper isScrolled={isScrolled}>
       <StyledNavList>
         <LoggoNavWrapper>

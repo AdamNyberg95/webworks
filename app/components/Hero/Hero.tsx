@@ -7,7 +7,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 
 export const Hero: React.FC = () => {
-    return(<Container style={{ backgroundColor: 'var(--header-color)' }}>
+    return(<Container style={{ background: 'linear-gradient(to bottom, var(--header-color-light-yellow) 0%, var(--header-color-light-orange) 25%, var(--header-color) 50%, var(--header-color-shade) 75%, var(--header-color-light-yellow) 100%)' }}>
 
         <TextBox>
            <H1 >SA Solutions</H1> 
