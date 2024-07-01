@@ -107,7 +107,7 @@ align-items: center;
 justify-content: center;
 border: solid 1px;
 background-color: black;
-border-color: var(--header-color-light-yellow);
+border-color: white;
 
 
 `;

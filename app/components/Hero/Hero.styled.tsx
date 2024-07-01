@@ -42,31 +42,21 @@ margin-top: 28px;
 
 
 
-export const BoldSpan = styled.span`
-font-weight: 700;
+export const ColorSpan = styled.span`
 color: #619894;
 `;
 
-export const TypographyBig = styled.h4`
+export const TypographyBigThin = styled.h4`
 font-size: 20px;
 font-weight: 200;
 line-height: 1.5;
 margin-left: 10px;
-
-
-
-
-
-
-
 `;
 
 export const BtnWrapper = styled.div`
 display: flex;
 flex-direction: row;
 margin-left: 10px;
-
-
 `;
 
 export const BtnText = styled.button`
@@ -77,6 +67,7 @@ display: flex;
 align-items: center;
 margin-bottom: 10px;
 margin-left: 10px;
+
 
 a {
     text-decoration: none;
@@ -90,11 +81,13 @@ export const TypographySmall = styled.p`
 font-size: 18px;
 
 
+
 `;
 
 export const BtnTypography = styled.p`
 font-size: 16px;
-color: var(--header-color-light-yellow);
+color: white;
+
 `;
 
 export const BtnPrimaryBig = styled.button`
@@ -108,7 +101,7 @@ justify-content: center;
 border: solid 1px;
 margin-right: 10px;
 background-color: black;
-border-color: var(--header-color-light-yellow);
+border-color: white;
 `;
 
 
