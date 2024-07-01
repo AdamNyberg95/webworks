@@ -1,14 +1,14 @@
 'use client';
 
 import React from 'react';
-import { Container, LoggaContainer, TextFooter, Title, Wrapper, Typography, FooterCard, TextWrapper, Box, BoxWrapper, Box2, Border, TypographySmall, EndTypographyWrapper } from './Footer.styled';
+import { Container, TextFooter, Title, Wrapper, Typography, FooterCard, TextWrapper, Box, BoxWrapper, Box2, Border, TypographySmall, EndTypographyWrapper } from './Footer.styled';
 import { PiCopyrightThin } from "react-icons/pi";
 
 export const Footer: React.FC = () => {
     return(<> <Container>
 
         <Wrapper>
-        <LoggaContainer><TextFooter>SA Solutions</TextFooter></LoggaContainer>
+       <TextFooter>SA Solutions</TextFooter>
         <BoxWrapper>
         <Box>
         <Title>Kontakt</Title>

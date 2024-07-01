@@ -7,9 +7,7 @@ height: 430px;
 top: 0;
 `;
 
-export const LoggaContainer = styled.div`
 
-`;
 
 export const TextFooter = styled.p`
 color: white;
@@ -57,10 +55,7 @@ color: white;
 font-size: 12px;
 font-weight: 200;
 line-height: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 10px;
+
 `;
 
 export const FooterCard = styled.div`
