@@ -78,6 +78,11 @@ align-items: center;
 margin-bottom: 10px;
 margin-left: 10px;
 
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
 
 `;
 
@@ -89,6 +94,7 @@ font-size: 18px;
 
 export const BtnTypography = styled.p`
 font-size: 16px;
+color: var(--header-color-light-yellow);
 `;
 
 export const BtnPrimaryBig = styled.button`
@@ -101,6 +107,8 @@ align-items: center;
 justify-content: center;
 border: solid 1px;
 margin-right: 10px;
+background-color: black;
+border-color: var(--header-color-light-yellow);
 `;
 
 

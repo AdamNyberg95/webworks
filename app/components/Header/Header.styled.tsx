@@ -91,6 +91,9 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 border: solid 1px;
+background-color: black;
+border-color: var(--header-color-light-yellow)
+
 
 `;
 export const BtnPrimarySmall = styled.button`
@@ -103,11 +106,15 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 border: solid 1px;
+background-color: black;
+border-color: var(--header-color-light-yellow);
+
 
 `;
 
 export const BtnSmallTypography = styled.p`
 font-size: 12px;
+color: white;
 `;
 
 

@@ -44,7 +44,7 @@ useEffect(() => {
           </NavLinks>
         ))}
       </LoggoNavWrapper>
-      <BtnPrimarySmall><BtnSmallTypography>Boka möte </BtnSmallTypography> <IoIosArrowRoundForward size={23}/>
+      <BtnPrimarySmall><BtnSmallTypography>Boka möte </BtnSmallTypography> <IoIosArrowRoundForward size={23} color='white'/>
       </BtnPrimarySmall>
       </StyledNavList>
       </Wrapper>
