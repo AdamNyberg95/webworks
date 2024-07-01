@@ -1,11 +1,19 @@
+import { StarSvg } from '@/app/assets/icons/StarSvg';
 import styled from 'styled-components';
+
+const WiStarsDataURL = `data:image/svg+xml;utf8,${encodeURIComponent(StarSvg)}`;
+
+
 
 export const Container = styled.header`
 height: 100vh;
 width: 100vw;
 padding: 20px;
-`;
+background: 
+url(${WiStarsDataURL}) repeat,
+linear-gradient(to bottom, var(--header-color-light-yellow) 0%, var(--header-color-light-orange) 25%, var(--header-color) 50%, var(--header-color-shade) 75%, var(--header-color-light-yellow) 100%);
 
+`;
 
 
 export const TextBox = styled.div`
@@ -40,7 +48,7 @@ color: #619894;
 `;
 
 export const TypographyBig = styled.h4`
-font-size: 22px;
+font-size: 20px;
 font-weight: 200;
 line-height: 1.5;
 margin-left: 10px;
