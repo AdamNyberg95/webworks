@@ -34,7 +34,7 @@ useEffect(() => {
       <Wrapper isScrolled={isScrolled}>
       <StyledNavList>
         <LoggoNavWrapper>
-      <Logga><Image src={logga2} alt="logga"  width={65} height={65}/> </Logga>
+      <Logga><Link href={`/`} ><Image src={logga2} alt="logga"  width={65} height={65}/> </Link></Logga>
         {links.map((link, index) => (
           <NavLinks key={index}>
             <Link href={`/${link.path}`} passHref>
