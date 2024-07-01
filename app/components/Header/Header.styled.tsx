@@ -24,7 +24,7 @@ top: 0;
 
 `;
 
-export const Wrapper = styled.div<ScrollProps>`
+export const Wrapper = styled.nav<ScrollProps>`
   width: ${({ isScrolled }) => (isScrolled ? '95%' : '100%')};
   margin-top: ${({ isScrolled }) => (isScrolled ? '10px' : '')};
   padding:${({ isScrolled }) => (isScrolled ? '0px' : '10px')};
@@ -33,7 +33,7 @@ export const Wrapper = styled.div<ScrollProps>`
  height: 70px;
  display: flex;
  justify-content: centre;
- background: ${({ isScrolled }) => (isScrolled ? '#FFFFE0' : 'transparent')};
+ background: ${({ isScrolled }) => (isScrolled ? 'var(--header-color-light-yellow)' : 'transparent')};
 
 ;
 
@@ -63,11 +63,17 @@ align-items: center;
 
 `;
 
-export const StyledNavLinkItem = styled.nav`
+export const NavLinks = styled.li`
 display: flex;
 align-items: center;
 padding: 10px;
+font-size: 16px;
 
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
 
 `;
 
