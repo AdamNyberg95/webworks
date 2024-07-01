@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import {  BtnPrimarySmall, BtnTypography, Container, Logga, LoggoNavWrapper, StyledNavLinkItem, StyledNavList, Wrapper} from './Header.styled';
+import {  BtnPrimarySmall, BtnSmallTypography, Container, Logga, LoggoNavWrapper, StyledNavLinkItem, StyledNavList, Wrapper} from './Header.styled';
 import logga2 from '../../assets/icons/logga1.png'
 
 
@@ -33,7 +33,7 @@ useEffect(() => {
           <StyledNavLinkItem key={index}>{link}</StyledNavLinkItem>
         ))}
       </LoggoNavWrapper>
-      <BtnPrimarySmall><BtnTypography>Boka möte </BtnTypography> <IoIosArrowRoundForward size={23}/>
+      <BtnPrimarySmall><BtnSmallTypography>Boka möte </BtnSmallTypography> <IoIosArrowRoundForward size={23}/>
       </BtnPrimarySmall>
       </StyledNavList>
       </Wrapper>
