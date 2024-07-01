@@ -25,6 +25,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Header />
           <Hero/>
+          <Footer></Footer>
           <ThemeToggle />
           <div
             style={{
@@ -34,6 +35,7 @@ export default function RootLayout({
           >
             {children}
           </div>
+      
         </ThemeProvider>
       </body>
     </html>
