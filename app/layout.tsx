@@ -5,6 +5,7 @@ import ThemeToggle from './components/ThemeToggle/ThemeToggle';
 import { ThemeProvider } from './context/ThemeContext';
 import './globals.css';
 import { Hero } from './components/Hero/Hero';
+import { Footer } from './components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 

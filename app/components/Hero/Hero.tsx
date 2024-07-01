@@ -11,8 +11,8 @@ export const Hero: React.FC = () => {
     return(
     <Container>
         <TextBox>
-           <H1 >SA Solutions</H1> 
-           <H2 >Your solution for  <ColorSpan>your </ColorSpan> web</H2> 
+           <H1>SA Solutions</H1> 
+           <H2>Your solution for  <ColorSpan>your</ColorSpan> web</H2> 
              <TypographyBigThin> SA Solutions erbjuder skärddarsydda digitala lösningar för din web. Ser du behov av en hemsida till ditt företag, behöver din hemsida uppdateras eller vill du hitta andra digitala lösningar för ditt företag? Då tror vi att vi är rätt partner för dig! </TypographyBigThin>
              <BtnText> <Link href={`/about`}> <TypographySmall> Läs mer om oss </TypographySmall> </Link><IoIosArrowRoundForward size={25} /></BtnText> 
              <BtnWrapper>

@@ -1,8 +1,4 @@
 import styled from 'styled-components';
-import Link from 'next/link'
-
-
-
 
 interface ScrollProps{
   isScrolled: boolean;
@@ -18,10 +14,6 @@ export const Container = styled.header`
 flex-direction: row;
 justify-content: center;
 top: 0;
-
-
-
-
 `;
 
 export const Wrapper = styled.nav<ScrollProps>`
@@ -34,10 +26,6 @@ export const Wrapper = styled.nav<ScrollProps>`
  display: flex;
  justify-content: centre;
  background: ${({ isScrolled }) => (isScrolled ? 'var(--header-color-light-yellow)' : 'transparent')};
-
-;
-
-
 `;
 
 export const StyledNavList = styled.ul`
@@ -82,17 +70,15 @@ export const BtnPrimary = styled.button`
 width: 135px;
 height: 45px;
 border-radius: 30px;
-
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
 border: solid 1px;
 background-color: black;
-border-color: var(--header-color-light-yellow)
-
-
+border-color: white;
 `;
+
 export const BtnPrimarySmall = styled.button`
 width: 112px;
 height: 38px;
@@ -105,8 +91,6 @@ justify-content: center;
 border: solid 1px;
 background-color: black;
 border-color: white;
-
-
 `;
 
 export const BtnSmallTypography = styled.p`
