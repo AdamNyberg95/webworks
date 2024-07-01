@@ -38,7 +38,6 @@ useEffect(() => {
         {links.map((link, index) => (
           <NavLinks key={index}>
             <Link href={`/${link.path}`} passHref>
-              
                   {link.display}
                 </Link>
           </NavLinks>

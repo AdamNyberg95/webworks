@@ -77,9 +77,6 @@ a {
 
 `;
 
-export const BtnWrapper = styled.div`
-
-`;
 
 export const BtnPrimary = styled.button`
 width: 135px;
