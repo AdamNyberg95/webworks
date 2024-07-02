@@ -4,6 +4,10 @@ interface ScrollProps{
   isScrolled: boolean;
 }
 
+interface NavLinkProps {
+  activeclassname: string;
+}
+
 export const Container = styled.header`
   position: fixed;
   gap: 16px;
@@ -28,7 +32,7 @@ export const Wrapper = styled.nav<ScrollProps>`
  background: ${({ isScrolled }) => (isScrolled ? 'var(--header-color-light-yellow)' : 'transparent')};
 `;
 
-export const StyledNavList = styled.ul`
+export const NavList = styled.ul`
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -36,7 +40,9 @@ width: 100%;
 align-items: center;
 padding: 0px 50px;
 
-
+&:hover li:not(:hover) a {
+    opacity: 0.5;
+  }
 `;
 
 export const LoggoNavWrapper = styled.div`
@@ -57,11 +63,11 @@ align-items: center;
 padding: 10px;
 font-size: 16px;
 
-
-a {
-    text-decoration: none;
-    color: inherit;
-  }
+a{
+   text-decoration: none;
+   color: inherit;
+   transition: opacity 0.3s ease;
+}
 
 `;
 
@@ -97,5 +103,6 @@ export const BtnSmallTypography = styled.p`
 font-size: 12px;
 color: white;
 `;
+
 
 

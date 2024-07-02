@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import {  BtnPrimarySmall, BtnSmallTypography, Container, Logga, LoggoNavWrapper, NavLinks, StyledNavList, Wrapper} from './Header.styled';
+import {  BtnPrimarySmall, BtnSmallTypography, Container, Logga, LoggoNavWrapper, NavLinks, NavList, Wrapper} from './Header.styled';
 import logga2 from '../../assets/icons/logga1.png'
 
 
@@ -12,6 +12,7 @@ import Link from 'next/link';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+
   const links = [
     { display: "Våra tjänster", path: "vara-tjanster" },
     { display: "Om oss", path: "about" },
@@ -32,20 +33,21 @@ useEffect(() => {
   return (
     <Container>
       <Wrapper isScrolled={isScrolled}>
-      <StyledNavList>
+      <NavList >
         <LoggoNavWrapper>
       <Logga><Link href={`/`} ><Image src={logga2} alt="logga"  width={75} height={65}/> </Link></Logga>
         {links.map((link, index) => (
           <NavLinks key={index}>
-            <Link href={`/${link.path}`} passHref>
+          <Link href={`/${link.path}`} passHref>
                   {link.display}
                 </Link>
+              
           </NavLinks>
         ))}
       </LoggoNavWrapper>
       <BtnPrimarySmall><BtnSmallTypography>Boka möte </BtnSmallTypography> <IoIosArrowRoundForward size={23} color='white'/>
       </BtnPrimarySmall>
-      </StyledNavList>
+      </NavList>
       </Wrapper>
     </Container>
   );
